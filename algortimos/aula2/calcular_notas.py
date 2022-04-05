@@ -21,3 +21,5 @@ if (soma_das_notas < 6):
     
 if (soma_das_notas >= 9):
     print("VOCÊ É O ALUNO NINJA!!!")
+
+print("fim do programa!")
