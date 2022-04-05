@@ -4,7 +4,7 @@ int N2;
 int N3;
 double media;
 
-
+Console.WriteLine("Inicío do programa");
 // Seção de Comandos, procedimento, funções, operadores, etc... 
 Console.WriteLine("Informe o nome do aluno");
 nome = Console.ReadLine();
