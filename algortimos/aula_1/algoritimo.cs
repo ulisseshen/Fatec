@@ -24,5 +24,5 @@ media = (N1 + N2 + N3 ) /3;
 // Exibir utilizando a var "Total":
 Console.WriteLine ("{0} sua média é {1}", nome ,media);
 
-Console.WriteLine ("fim do programa")
+Console.WriteLine ("fim do programa");
 
