@@ -7,5 +7,12 @@
 
 //Empresa: Ifood
 
-//escreval("ola")
-var valorFrete = calculeFreteEntrega("12345-678", "68712-324");
+const calculo = require('./calculeEntrega');
+const log = require('./log')
+
+// eu preciso pegar a string e atribuir-la à variavel
+var cepCliente = "12345-678"; 
+var cepEmpresa = "68712-324";
+var valorFrete = calculo.calculeFreteEntrega(cepCliente, cepEmpresa);
+log.logarMensagem("O valor do frete é: " + valorFrete);
+
