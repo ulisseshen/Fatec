@@ -7,8 +7,10 @@
 
 //Empresa: Ifood
 
-const calculo = require('./calculeEntrega');
-const log = require('./log')
+// funcionalidade do Nodejs para importar arquivos/(bibliotecas)  
+//e usar suas funcionalidades/metodos
+var calculo = require('./calculeEntrega');
+var log = require('./log');
 
 // eu preciso pegar a string e atribuir-la à variavel
 var cepCliente = "12345-678"; 
