@@ -2,15 +2,16 @@
 function calculeFreteEntrega(cepCliente, cepEmpresa) {
     // algoritmo
     // pegue a distancia de um cep para o outro
-    var distancia = calcularDistancia(cepEmpresa, cepCliente);
+    var distancia = calculeDistanciaFake(cepEmpresa, cepCliente);
     var valorFrete = calcularValorFrete(distancia);
 
     return valorFrete;
 }
 
-function calcularDistancia(cepOrigem, cepDestino) {
-    var distanciaCalculada = calculeDistanciaFake(cepOrigem, cepDestino);
-    return distanciaCalculada;
+function calculeDistanciaFake(cepOrigem, cepDestino) {
+    // retornando sempre 3k até ser implementado
+    var distanciaFake = 3000;
+    return distanciaFake;
 }
 
 function calcularValorFrete(distancia) {
@@ -19,11 +20,5 @@ function calcularValorFrete(distancia) {
     return valorFrete;
 }
 
-function calculeDistanciaFake(cepOrigem, cepDestino) {
-    // simula que calcula o frete entre dois cep
-    // sempre vai retornar um valor aleatório
-    // mesmo que os ceps que chame a função sejam os mesmos
-    return Math.random() * (3000 - 3000) + 3000;
-}
 
 module.exports = { calculeFreteEntrega };
